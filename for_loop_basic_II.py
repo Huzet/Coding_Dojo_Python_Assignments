@@ -116,7 +116,7 @@
 
 def reverse_list(lst):
     temp = 0
-    leng = round(len(lst) /1.8)
+    leng = round(len(lst) /2 )
     for i in range(0, leng, 1):
         temp = lst[i] 
         lst[i] = lst[len(lst)-1 -i]
@@ -124,7 +124,7 @@ def reverse_list(lst):
     return lst
 
 
-print(reverse_list([37,2,1,-9]))
+print(reverse_list([37,2,1,-9,2]))
     
 
 
