@@ -11,6 +11,6 @@ def randInt(min=0 , max=100):
         print("Min cant be greated then Max or vice versa")
         return
     num = random.randrange(min, max)
-    print(num)
+    return num
 
-randInt(min=5, max=10)
+print(randInt(min=5, max=10))
