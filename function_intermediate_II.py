@@ -40,10 +40,23 @@ def iterateDictionary(lst):
 
 def iterateDictionary2(key_name, some_list):    
     for i in range(len(some_list)):
-        print(students[key_name])
+        print(some_list[i][key_name])
 
-# iterateDictionary2('first_name', students)
-print(students[0])
+# 7. Create a function printInfo(some_dict) that given a dictionary whose values are all lists, prints the name of each key along with the size of its list, and then prints the associated values within each key's list. For example:
+dojo = {
+   'locations': ['San Jose', 'Seattle', 'Dallas', 'Chicago', 'Tulsa', 'DC', 'Burbank'],
+   'instructors': ['Michael', 'Amy', 'Eduardo', 'Josh', 'Graham', 'Patrick', 'Minh', 'Devon']
+}
+
+def print_info(some_dict):
+  for i in some_dict.keys():
+    print(f"{len(some_dict[i])} {i.upper()}")
+    for item in some_dict[i]:
+      print(item)
+    print('\n')
+
+print_info(dojo)
+
 
 
 
